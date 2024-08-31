@@ -61,7 +61,7 @@ def verificar(event):
     if texto_ingresado == frase: 
         tiempo_fin = timeit.default_timer()
         tiempo_total = tiempo_fin - tiempo_inicio
-        label.config(text=f"Correcto, tiempo total: {tiempo_total:.2f} segundos")
+        tiempo.config(text=f"Correcto, tiempo total: {tiempo_total:.2f} segundos")
 
 
 entrada.bind("<KeyPress>", iniciar_tiempo) # Asignamos el inicio del temporizador a pulsar cualquier tecla 
